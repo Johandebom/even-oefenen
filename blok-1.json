@@ -1,0 +1,854 @@
+{
+  "schemaVersion": 1,
+  "block": "blok-1",
+  "title": "Wetenschapsfilosofie — Blok 1",
+  "sources": {
+    "L": "litratuur.txt — aangeleverde samenvatting van Okasha en Pfeffer & Sutton, niet de originele publicaties",
+    "C": "College 1 voor Canvas.pdf",
+    "Q": "Screenshots Week 1 Quiz (20260904) — vragen 1 t/m 10"
+  },
+  "sourceNote": "Gebaseerd op alle aangeleverde bestanden. De literatuur is een samenvatting; de oorspronkelijke publicaties zijn niet aanwezig. Screenshots bevatten de Week 1 Quiz, geen volledig proefexamen. Nieuwe casussen zijn oefenvarianten, geen officiële examenvragen.",
+  "settings": {
+    "batchSize": 7,
+    "mixed": true,
+    "intervalsDays": [
+      1,
+      3,
+      5,
+      8,
+      11,
+      14
+    ],
+    "maxIntervalDays": 14,
+    "wrongAnswer": "feedback-then-append",
+    "resetOnWrong": true
+  },
+  "items": [
+    {
+      "id": "b1-f-001",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Wetenschap",
+      "question": "Wat probeert wetenschap te bereiken?",
+      "answer": "De wereld systematisch begrijpen, verklaren en voorspellen met behulp van redenering, observaties en toetsing. Een wetenschappelijk uiterlijk is op zichzelf geen bewijs van betrouwbaarheid.",
+      "source": "L; C p. 31, 41"
+    },
+    {
+      "id": "b1-f-002",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Demarcatie",
+      "question": "Wat is het demarcatieprobleem?",
+      "answer": "De vraag hoe we wetenschap van niet-wetenschap, waaronder pseudowetenschap, onderscheiden. Eén eenvoudige checklist of criterium legt die grens niet volledig vast.",
+      "source": "Q 2–3; C p. 16, 31"
+    },
+    {
+      "id": "b1-f-003",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Pseudowetenschap",
+      "question": "Waarom maakt technisch taalgebruik een theorie nog niet wetenschappelijk?",
+      "answer": "Jargon kan de indruk van wetenschap wekken zonder dat beweringen empirisch toetsbaar zijn. Vraag welke waarnemingen de claim ondersteunen of ermee in strijd zouden zijn.",
+      "source": "Q 1"
+    },
+    {
+      "id": "b1-f-004",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Falsifieerbaarheid",
+      "question": "Wat betekent falsifieerbaarheid bij Popper?",
+      "answer": "Er moet in principe een mogelijke waarneming zijn die met de theorie in strijd is. Falsifieerbaar betekent dus weerlegbaar, niet dat de theorie al onwaar is.",
+      "source": "L"
+    },
+    {
+      "id": "b1-f-005",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Falsifieerbaarheid",
+      "question": "Wat is het verschil tussen falsifieerbaar en gefalsifieerd?",
+      "answer": "Falsifieerbaar: een weerlegging is in principe mogelijk. Gefalsifieerd: er is daadwerkelijk een weerlegging vastgesteld, gegeven de relevante aannames en betrouwbare waarnemingen.",
+      "source": "L; C p. 16"
+    },
+    {
+      "id": "b1-f-006",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Falsifieerbaarheid",
+      "question": "Waarom bewijzen duizend witte zwanen niet dat alle zwanen wit zijn?",
+      "answer": "Niet alle gevallen zijn waargenomen. Een volgende zwaan kan zwart zijn. Een betrouwbaar vastgesteld zwart exemplaar is wel een tegenvoorbeeld voor de universele uitspraak.",
+      "source": "L"
+    },
+    {
+      "id": "b1-f-007",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Demarcatie",
+      "question": "Waarom is falsifieerbaarheid geen eenvoudige definitieve oplossing voor demarcatie?",
+      "answer": "Het onderscheid blijft betekenisvol, maar wetenschappelijke praktijken zijn te veelzijdig om met één eenvoudig criterium volledig te beoordelen. Een strikte checklist kan legitieme wetenschap uitsluiten.",
+      "source": "Q 2–3"
+    },
+    {
+      "id": "b1-f-008",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Redeneren",
+      "question": "Wat is een premisse?",
+      "answer": "Een uitgangsuitspraak van een redenering. De conclusie wordt op basis van één of meer premissen afgeleid.",
+      "source": "L"
+    },
+    {
+      "id": "b1-f-009",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Deductie",
+      "question": "Wat maakt een deductieve redenering geldig?",
+      "answer": "Als de premissen waar zijn, kan de conclusie niet onwaar zijn. Geldigheid gaat over het logische verband; zij garandeert niet dat de premissen feitelijk kloppen.",
+      "source": "L; C p. 35–36"
+    },
+    {
+      "id": "b1-f-010",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Deductie",
+      "question": "Is een logisch geldige redenering automatisch waar over de wereld?",
+      "answer": "Nee. Een geldige redenering kan vertrekken van onware aannames. Voor een gegarandeerd ware conclusie zijn ook ware premissen nodig.",
+      "source": "L; C p. 36, 39"
+    },
+    {
+      "id": "b1-f-011",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Deductie",
+      "question": "Geef een voorbeeld van deductie.",
+      "answer": "Alle leden van team A hebben een toegangspas. Noor is lid van team A. Dus Noor heeft een toegangspas. Als beide premissen waar zijn, volgt de conclusie noodzakelijk.",
+      "source": "L (nieuw toepassingsvoorbeeld)"
+    },
+    {
+      "id": "b1-f-012",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Inductie",
+      "question": "Wat is inductief redeneren?",
+      "answer": "Van waargenomen gevallen naar een bredere uitspraak of voorspelling over niet-waargenomen gevallen gaan. De conclusie volgt niet met logische noodzaak.",
+      "source": "L; Q 4–5"
+    },
+    {
+      "id": "b1-f-013",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Inductie",
+      "question": "Geef een managementvoorbeeld van inductie.",
+      "answer": "In vijf onderzochte vestigingen daalt het verzuim na een maatregel. Je verwacht dat die maatregel ook elders zal helpen. Dat gaat verder dan de onderzochte gevallen en blijft onzeker.",
+      "source": "L; C p. 16 (nieuw toepassingsvoorbeeld)"
+    },
+    {
+      "id": "b1-f-014",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Inductie",
+      "question": "Wat is het probleem van inductie?",
+      "answer": "Beperkte waarnemingen en eerdere ervaringen garanderen niet logisch dat een algemene uitspraak of een voorspelling over nieuwe gevallen waar is.",
+      "source": "L; Q 4"
+    },
+    {
+      "id": "b1-f-015",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Inductie",
+      "question": "Verdwijnt het probleem van inductie bij een heel grote steekproef?",
+      "answer": "Nee. Meer relevante waarnemingen kunnen de ondersteuning verbeteren, maar maken een conclusie over niet-waargenomen gevallen niet logisch zeker.",
+      "source": "L; Q 4"
+    },
+    {
+      "id": "b1-f-016",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Redeneren",
+      "question": "Wat is het beslissende verschil tussen inductie en deductie?",
+      "answer": "Bij geldige deductie garanderen ware premissen een ware conclusie. Bij inductie kan de conclusie onwaar zijn terwijl de waarnemingen waarop zij rust kloppen.",
+      "source": "L"
+    },
+    {
+      "id": "b1-f-017",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Rationalisme",
+      "question": "Wat is filosofisch rationalisme?",
+      "answer": "De opvatting dat de rede de belangrijkste bron van betrouwbare kennis is. Het benadrukt logische principes, deductie en scepsis tegenover misleidende zintuiglijke indrukken.",
+      "source": "C p. 32, 35"
+    },
+    {
+      "id": "b1-f-018",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Rationalisme",
+      "question": "Welke drie rationalisten noemen de slides?",
+      "answer": "Descartes, Spinoza en Leibniz.",
+      "source": "C p. 35"
+    },
+    {
+      "id": "b1-f-019",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Rationalisme",
+      "question": "Wat drukt Descartes uit met Cogito, ergo sum?",
+      "answer": "Ik denk, dus ik ben. Het denken vormt hier een vertrekpunt voor zekerheid in plaats van simpelweg op de zintuigen te vertrouwen.",
+      "source": "C p. 35"
+    },
+    {
+      "id": "b1-f-020",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Rationalisme",
+      "question": "Wat zijn een sterkte en een risico van modellen in de bedrijfskunde?",
+      "answer": "Sterkte: aannames expliciet maken en gevolgen logisch afleiden. Risico: een logisch samenhangend model kan op onjuiste aannames over de werkelijkheid berusten.",
+      "source": "C p. 36"
+    },
+    {
+      "id": "b1-f-021",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Empirisme",
+      "question": "Wat is filosofisch empirisme?",
+      "answer": "De opvatting dat ervaring de belangrijkste bron van kennis is. Observatie en experiment confronteren beweringen met de werkelijkheid.",
+      "source": "C p. 38"
+    },
+    {
+      "id": "b1-f-022",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Empirisme",
+      "question": "Welke drie empiristen noemen de slides?",
+      "answer": "Locke, Berkeley en Hume.",
+      "source": "C p. 38"
+    },
+    {
+      "id": "b1-f-023",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Empirisme",
+      "question": "Hoe verschillen rationalisten en empiristen over aangeboren ideeën?",
+      "answer": "Rationalisten laten ruimte voor kennisstructuren of ideeën die niet uit ervaring komen. Empiristen staan sceptisch tegenover aangeboren kennis en benadrukken ervaring.",
+      "source": "C p. 35, 38"
+    },
+    {
+      "id": "b1-f-024",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Wetenschappelijke cyclus",
+      "question": "Waarom heeft moderne wetenschap zowel rede als ervaring nodig?",
+      "answer": "Logische samenhang garandeert niet dat een theorie bij de wereld past. Omgekeerd interpreteren gegevens zichzelf niet. Redenering en empirische toetsing vullen elkaar aan.",
+      "source": "C p. 39–41"
+    },
+    {
+      "id": "b1-f-025",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Wetenschappelijke cyclus",
+      "question": "Welke rol spelen inductie en deductie in de wetenschappelijke cyclus?",
+      "answer": "Inductie helpt patronen uit observaties te generaliseren. Deductie helpt uit een theorie toetsbare verwachtingen af te leiden. Nieuwe observaties kunnen aanleiding geven tot bijstelling.",
+      "source": "C p. 40–41"
+    },
+    {
+      "id": "b1-f-026",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Bewijs interpreteren",
+      "question": "Wat betekent: bewijs interpreteert zichzelf niet?",
+      "answer": "Gegevens vereisen redenering over context, aannames en alternatieve verklaringen. Een correct waargenomen verband kan verkeerd worden uitgelegd.",
+      "source": "C p. 21–24"
+    },
+    {
+      "id": "b1-f-027",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Simpsons paradox",
+      "question": "Wat laat het rookvoorbeeld over Simpsons paradox zien?",
+      "answer": "In de samengevoegde gegevens hebben rokende tieners grotere longcapaciteit, terwijl binnen iedere leeftijdsgroep meer roken samenhangt met lagere longcapaciteit. Leeftijd beïnvloedt beide variabelen.",
+      "source": "C p. 21–23"
+    },
+    {
+      "id": "b1-f-028",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Causaliteit",
+      "question": "Waarom bewijst een stijging na een maatregel niet dat de maatregel de oorzaak is?",
+      "answer": "Er kunnen gelijktijdige veranderingen of andere verklaringen zijn, zoals een groeiende markt of ander personeel. Alleen de volgorde in de tijd sluit die verklaringen niet uit.",
+      "source": "L"
+    },
+    {
+      "id": "b1-f-029",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Hulphypotheses",
+      "question": "Wat is een hulphypothese bij het toetsen van een theorie?",
+      "answer": "Een aanvullende aanname die nodig is om een voorspelling aan een test te verbinden, bijvoorbeeld dat de maatregel correct is uitgevoerd. Een tegenvallend resultaat kan ook daarmee samenhangen.",
+      "source": "C p. 16"
+    },
+    {
+      "id": "b1-f-030",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Bewijs en overtuigingen",
+      "question": "Wat betekent responsiveness to evidence?",
+      "answer": "Bereid zijn overtuigingen en handelen bij te stellen als relevante bevindingen daartoe aanleiding geven. Bewijs verzamelen zonder erop te reageren is onvoldoende.",
+      "source": "C p. 16, 25; L"
+    },
+    {
+      "id": "b1-f-031",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Semmelweis",
+      "question": "Welke interventie en uitkomst beschrijven de slides bij Semmelweis?",
+      "answer": "Handen wassen met chloorkalk; daarna daalde de moedersterfte sterk. De casus laat ook zien dat overtuigend praktisch bewijs niet vanzelf wordt geaccepteerd.",
+      "source": "C p. 17–19"
+    },
+    {
+      "id": "b1-f-032",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "John Snow",
+      "question": "Hoe botste John Snows verklaring van cholera met de heersende theorie?",
+      "answer": "Snow wees op besmet water en het patroon van sterfgevallen rond een waterpomp. Dat botste met de miasmatheorie, die ziekte aan slechte lucht toeschreef.",
+      "source": "C p. 20"
+    },
+    {
+      "id": "b1-f-033",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Filosofie",
+      "question": "Wat onderzoekt filosofie volgens de slides?",
+      "answer": "Overtuigingen, aannames en concepten systematisch en kritisch: wat geloven we, waarom, is de rechtvaardiging voldoende en wat zou onze mening veranderen?",
+      "source": "C p. 30"
+    },
+    {
+      "id": "b1-f-034",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Geschiedenis",
+      "question": "Hoe droeg de drukpers volgens het college bij aan kritisch onderzoek?",
+      "answer": "Ideeën konden breder worden verspreid, vergeleken en bekritiseerd. Daardoor werden fouten zichtbaarder en werd kennis publiekelijk betwistbaarder.",
+      "source": "C p. 29"
+    },
+    {
+      "id": "b1-f-035",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Evidence-based management",
+      "question": "Wat is evidence-based management (EBM)?",
+      "answer": "Managementbeslissingen baseren op het beste beschikbare bewijs en kennis blijven bijstellen. Het doel is betere beslissingen en prestaties, niet onfeilbaarheid.",
+      "source": "L; Q 10"
+    },
+    {
+      "id": "b1-f-036",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Evidence-based management",
+      "question": "Waarom zijn intuïtie en persoonlijke anekdotes onvoldoende als enige basis?",
+      "answer": "Ze kunnen beperkt of selectief zijn en hoeven niet representatief te zijn. Ervaring kan aanleiding geven tot een vraag, maar moet kritisch worden vergeleken met ander relevant bewijs.",
+      "source": "L; Q 6"
+    },
+    {
+      "id": "b1-f-037",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Casual benchmarking",
+      "question": "Wat betekent casual benchmarking?",
+      "answer": "Een praktijk van een succesvol bedrijf overnemen omdat het bedrijf succesvol is, zonder voldoende te onderzoeken of die praktijk het succes veroorzaakte en in de eigen context past.",
+      "source": "Q 7; L"
+    },
+    {
+      "id": "b1-f-038",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Evidence-based management",
+      "question": "Waarom garandeert succes in organisatie A geen succes in organisatie B?",
+      "answer": "Organisaties kunnen verschillen in personeel, klanten, cultuur, technologie en markt. De overdraagbaarheid van een praktijk moet worden onderzocht.",
+      "source": "L; C p. 16"
+    },
+    {
+      "id": "b1-f-039",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Barrières voor EBM",
+      "question": "Noem drie culturele of psychologische barrières voor EBM.",
+      "answer": "Overmatig vertrouwen op conventionele wijsheid, eigen ervaring als superieur beschouwen en weigeren kleinschalig te experimenteren.",
+      "source": "Q 6, 8"
+    },
+    {
+      "id": "b1-f-040",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Prikkels",
+      "question": "Hoe kunnen beloningen EBM ondermijnen?",
+      "answer": "Als vooral kortetermijnresultaten worden beloond, kan zorgvuldig toetsen en leren worden verdrongen, ook als er weinig bewijs is voor de gebruikte aanpak.",
+      "source": "Q 9"
+    },
+    {
+      "id": "b1-f-041",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Evidence-based management",
+      "question": "Waarom maakt EBM het oordeel van een manager niet overbodig?",
+      "answer": "Bewijs moet worden beoordeeld op kwaliteit en toepasbaarheid in de eigen situatie. Beslissingen blijven afwegingen onder onzekerheid.",
+      "source": "L; Q 10"
+    },
+    {
+      "id": "b1-f-042",
+      "block": "blok-1",
+      "type": "flashcard",
+      "topic": "Verbinding literatuur",
+      "question": "Hoe sluiten Okasha en Pfeffer & Sutton op elkaar aan?",
+      "answer": "Okasha behandelt hoe kennis en conclusies gerechtvaardigd worden. Pfeffer & Sutton passen een kritische omgang met bewijs toe op managementbeslissingen.",
+      "source": "L"
+    },
+    {
+      "id": "b1-q-001",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Pseudowetenschap",
+      "question": "Een adviseur gebruikt ingewikkelde termen, maar kan geen uitkomst noemen die zijn claim tegenspreekt. Wat is het kernprobleem?",
+      "options": [
+        "De claim mist een duidelijke mogelijkheid tot empirische weerlegging.",
+        "De claim bevat te weinig wiskundige formules.",
+        "De adviseur probeert iets te verklaren in plaats van te voorspellen.",
+        "De adviseur gebruikt vaktermen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vaktermen zijn niet het probleem op zichzelf. Doorslaggevend is hier dat de bewering aan iedere mogelijke uitkomst kan worden aangepast.",
+      "source": "Q 1; L"
+    },
+    {
+      "id": "b1-q-002",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Demarcatie",
+      "question": "Een student stelt: alleen onderzoek met laboratoriumexperimenten is wetenschap. Wat is de beste kritiek?",
+      "options": [
+        "Deze eis kan legitieme wetenschappen uitsluiten.",
+        "Ieder vakgebied met veel volgers is wetenschap.",
+        "Wetenschap heeft nooit experimenten nodig.",
+        "Wetenschap en pseudowetenschap verschillen uitsluitend in populariteit."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een eenvoudige methodechecklist vangt de verscheidenheid aan wetenschappelijk onderzoek niet volledig.",
+      "source": "Q 2–3"
+    },
+    {
+      "id": "b1-q-003",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Demarcatie",
+      "question": "Iemand zegt: omdat geen enkel eenvoudig criterium volstaat, bestaat het onderscheid tussen wetenschap en pseudowetenschap niet. Welke reactie past bij de quizstof?",
+      "options": [
+        "Het onderscheid kan betekenisvol zijn zonder één sluitend eenvoudig criterium.",
+        "Het onderscheid bestaat alleen als Popper altijd gelijk heeft.",
+        "Een gebrek aan één criterium maakt alle claims even betrouwbaar.",
+        "Het onderscheid hangt uitsluitend af van de opleiding van de spreker."
+      ],
+      "correctIndex": 0,
+      "explanation": "Moeilijk af te bakenen betekent niet betekenisloos. De quiz waarschuwt zowel voor een simpele oplossing als voor het volledig opgeven van het onderscheid.",
+      "source": "Q 3"
+    },
+    {
+      "id": "b1-q-004",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Falsifieerbaarheid",
+      "question": "Welke uitspraak is het duidelijkst falsifieerbaar?",
+      "options": [
+        "Iedere werknemer in dit team heeft vandaag vóór negen uur ingelogd.",
+        "Een onzichtbare kracht verklaart iedere mogelijke uitkomst.",
+        "Onze methode werkt altijd, behalve wanneer zij niet werkt.",
+        "Succes verschijnt zodra de energie op een onmeetbare manier klopt."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een betrouwbaar vastgesteld teamlid dat niet vóór negen uur inlogde is een tegenvoorbeeld. De andere claims ontwijken duidelijke toetsing.",
+      "source": "L (nieuw toepassingsvoorbeeld)"
+    },
+    {
+      "id": "b1-q-005",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Falsifieerbaarheid",
+      "question": "Een degelijk tegenvoorbeeld weerlegt de uitspraak dat alle vestigingen winstgevend zijn. Wat volgt?",
+      "options": [
+        "De universele uitspraak is onjuist.",
+        "Alle vestigingen maken verlies.",
+        "Geen enkele uitspraak over winst is toetsbaar.",
+        "Er zijn onvoldoende gegevens om de universele uitspraak te weerspreken."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eén verliesgevende vestiging weerlegt alle vestigingen zijn winstgevend, maar zegt niet dat alle vestigingen verlies maken.",
+      "source": "L (nieuw toepassingsvoorbeeld)"
+    },
+    {
+      "id": "b1-q-006",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Deductie",
+      "question": "Alle projecten in categorie X worden gecontroleerd. Project Delta behoort tot X. Wat volgt deductief?",
+      "options": [
+        "Project Delta wordt gecontroleerd.",
+        "Alle gecontroleerde projecten behoren tot X.",
+        "Project Delta is succesvol.",
+        "Waarschijnlijk behoren alle projecten tot X."
+      ],
+      "correctIndex": 0,
+      "explanation": "De conclusie past de algemene premisse toe op Delta. De omkering en een conclusie over succes volgen niet uit deze premissen.",
+      "source": "L"
+    },
+    {
+      "id": "b1-q-007",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Deductie",
+      "question": "Een model redeneert zonder logische fouten vanuit de aanname dat iedere klant alleen de laagste prijs kiest. Is de voorspelling daardoor zeker juist?",
+      "options": [
+        "Nee, de aanname over klanten kan onjuist zijn.",
+        "Ja, logische geldigheid garandeert dat aannames kloppen.",
+        "Ja, zolang het model voldoende formules bevat.",
+        "Nee, deductie kan nooit een noodzakelijke conclusie opleveren."
+      ],
+      "correctIndex": 0,
+      "explanation": "Geldigheid garandeert alleen een ware conclusie als de premissen ook waar zijn.",
+      "source": "C p. 36, 39; L"
+    },
+    {
+      "id": "b1-q-008",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Inductie",
+      "question": "Een onderzoeker vindt bij dertig teams een vergelijkbaar patroon en verwacht dat het ook bij andere teams optreedt. Welke redenering is dit?",
+      "options": [
+        "Inductie, omdat de conclusie verder gaat dan de onderzochte teams.",
+        "Deductie, omdat er dertig teams zijn onderzocht.",
+        "Falsificatie, omdat ieder patroon een theorie weerlegt.",
+        "Een logische zekerheid, omdat het patroon herhaald is."
+      ],
+      "correctIndex": 0,
+      "explanation": "De stap van onderzochte naar niet-onderzochte gevallen is inductief. Herhaling maakt die stap niet deductief geldig.",
+      "source": "Q 4–5; L"
+    },
+    {
+      "id": "b1-q-009",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Inductie",
+      "question": "Alle tot nu toe onderzochte machines van een type waren betrouwbaar. Waarom is gegarandeerd betrouwbaar bij iedere toekomstige machine te sterk?",
+      "options": [
+        "De conclusie omvat niet-waargenomen gevallen.",
+        "Herhaalde observaties kunnen geen enkele steun bieden.",
+        "Alle inductieve conclusies zijn feitelijk onwaar.",
+        "Deductie wordt ongeldig zodra een machine wordt onderzocht."
+      ],
+      "correctIndex": 0,
+      "explanation": "Inductief bewijs kan ondersteunen zonder een universele of toekomstige uitspraak logisch te garanderen.",
+      "source": "Q 4; L"
+    },
+    {
+      "id": "b1-q-010",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Inductie",
+      "question": "Een directeur zegt: deze aanpak werkte in twee bedrijven, dus hij werkt zeker in ons bedrijf. Waar zit de overschatting?",
+      "options": [
+        "De stap naar een nieuwe context wordt als logisch zeker gepresenteerd.",
+        "Er wordt een noodzakelijke conclusie uit ware algemene premissen getrokken.",
+        "De directeur gebruikt waarnemingen, en dat mag niet bij management.",
+        "Twee bedrijven kunnen per definitie geen relevante informatie opleveren."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eerdere ervaringen kunnen relevant zijn, maar verschillen in context blijven belangrijk.",
+      "source": "L; C p. 16"
+    },
+    {
+      "id": "b1-q-011",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Rationalisme",
+      "question": "Een student benadrukt deductie, aangeboren ideeën en wantrouwen tegenover de zintuigen. Welke stroming past het best?",
+      "options": [
+        "Rationalisme.",
+        "Empirisme.",
+        "Casual benchmarking.",
+        "Een uitsluitend op ervaring gebaseerde kennisleer."
+      ],
+      "correctIndex": 0,
+      "explanation": "Deze combinatie behoort in de slides bij rationalisme. Empirisme legt juist het accent op ervaring.",
+      "source": "C p. 35, 38"
+    },
+    {
+      "id": "b1-q-012",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Empirisme",
+      "question": "Een onderzoeker zegt: een sluitende redenering is niet genoeg; we moeten kijken wat er werkelijk gebeurt. Welk accent legt zij?",
+      "options": [
+        "Een empiristisch accent op observatie en toetsing.",
+        "De afwijzing van iedere mogelijke observatie.",
+        "De zekerheid dat aangeboren ideeën alle kennis leveren.",
+        "De stelling dat logisch samenhangende theorieën altijd waar zijn."
+      ],
+      "correctIndex": 0,
+      "explanation": "Zij eist confrontatie met ervaring. Dit betekent niet dat logische redenering onbelangrijk wordt.",
+      "source": "C p. 37–39"
+    },
+    {
+      "id": "b1-q-013",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Wetenschappelijke cyclus",
+      "question": "Een onderzoeker leidt uit een theorie een verwachting af en verzamelt vervolgens gegevens. Wat is de eerste stap?",
+      "options": [
+        "Deductie van een toetsbare verwachting.",
+        "Inductie vanuit de nog niet verzamelde gegevens.",
+        "Bewijs dat de theorie definitief waar is.",
+        "Het uitsluiten van iedere hulphypothese."
+      ],
+      "correctIndex": 0,
+      "explanation": "Van een theorie naar een verwachting redeneren is de deductieve kant van de cyclus; daarna volgt empirische toetsing.",
+      "source": "C p. 40"
+    },
+    {
+      "id": "b1-q-014",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Wetenschappelijke cyclus",
+      "question": "Een team vindt in metingen een patroon, vormt een theorie en test nieuwe voorspellingen. Welke omschrijving past het best?",
+      "options": [
+        "Een wisselwerking tussen inductie, deductie en observatie.",
+        "Zuiver rationalisme zonder waarneming.",
+        "Uitsluitend deductie van begin tot eind.",
+        "Een proces waarin toetsing na theorievorming overbodig is."
+      ],
+      "correctIndex": 0,
+      "explanation": "De cyclus verbindt generaliseren uit observaties met het afleiden en toetsen van nieuwe verwachtingen.",
+      "source": "C p. 40–41"
+    },
+    {
+      "id": "b1-q-015",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Simpsons paradox",
+      "question": "In totaal hebben deelnemers aan een training hogere scores. Binnen elke ervaringsgroep scoren deelnemers juist lager. Wat moet je eerst onderzoeken?",
+      "options": [
+        "Hoe ervaring samenhangt met deelname en scores.",
+        "Waarom het totaalgemiddelde altijd de oorzaak bewijst.",
+        "Hoe je de uitkomsten per ervaringsgroep kunt negeren.",
+        "Waarom ieder verschil aantoont dat de gegevens vervalst zijn."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een derde variabele kan een omkering tussen samengevoegde en uitgesplitste patronen helpen verklaren, zoals leeftijd in het collegevoorbeeld.",
+      "source": "C p. 21–23 (nieuwe casus)"
+    },
+    {
+      "id": "b1-q-016",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Causaliteit",
+      "question": "Na invoering van een bonus stijgt de omzet, terwijl ook de hele markt sterk groeit. Wat is de beste conclusie?",
+      "options": [
+        "De stijging alleen toont niet aan dat de bonus de oorzaak is.",
+        "De bonus heeft bewezen de volledige stijging veroorzaakt.",
+        "De marktgroei bewijst dat de bonus geen enkel effect had.",
+        "De omzetmeting moet onjuist zijn."
+      ],
+      "correctIndex": 0,
+      "explanation": "Er is een alternatieve verklaring. Zonder verdere vergelijking kun je het afzonderlijke effect van de bonus niet uit deze stijging afleiden.",
+      "source": "L"
+    },
+    {
+      "id": "b1-q-017",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Hulphypotheses",
+      "question": "Een interventie levert geen verwacht resultaat op, maar de uitvoering week sterk af van het plan. Wat is een relevante vervolgvraag?",
+      "options": [
+        "Faalde de theorie of een aanname over correcte uitvoering?",
+        "Hoe bewijst dit dat geen theorie ooit te toetsen is?",
+        "Waarom is de theorie nu automatisch waar?",
+        "Welke succesvolle concurrent kunnen we zonder onderzoek kopiëren?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tests steunen ook op aanvullende aannames. Die moet je onderzoeken; afwijkende uitvoering is geen automatische vrijbrief voor de theorie.",
+      "source": "C p. 16"
+    },
+    {
+      "id": "b1-q-018",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Semmelweis",
+      "question": "Een organisatie ziet sterke aanwijzingen dat een werkwijze schade vermindert, maar weigert verandering omdat gevestigde autoriteiten haar afwijzen. Welke les uit het college past?",
+      "options": [
+        "Bewijs beschikbaar hebben garandeert nog niet dat mensen hun overtuigingen aanpassen.",
+        "Autoriteit vormt altijd sterker bewijs dan observaties.",
+        "Een werkzame interventie vereist vooraf een volledig juiste theorie.",
+        "Gegevens kunnen nooit botsen met bestaande overtuigingen."
+      ],
+      "correctIndex": 0,
+      "explanation": "De casus Semmelweis toont de afstand tussen praktisch bewijs en acceptatie.",
+      "source": "C p. 17–19"
+    },
+    {
+      "id": "b1-q-019",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "John Snow",
+      "question": "Een patroon rond een waterbron botst met de overtuiging dat slechte lucht ziekte veroorzaakt. Wat illustreert deze casus in het college?",
+      "options": [
+        "Empirische bevindingen kunnen een gevestigde verklaring uitdagen.",
+        "Een gevestigde theorie mag observaties altijd terzijde schuiven.",
+        "Ruimtelijke patronen leveren per definitie deductieve zekerheid.",
+        "Alleen autoriteit kan bepalen of waarnemingen relevant zijn."
+      ],
+      "correctIndex": 0,
+      "explanation": "De slides gebruiken Snow om de spanning tussen theorie en bewijs te tonen; gegevens moeten serieus worden onderzocht.",
+      "source": "C p. 20, 37"
+    },
+    {
+      "id": "b1-q-020",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Casual benchmarking",
+      "question": "Een directeur kopieert het beoordelingssysteem van een marktleider, uitsluitend omdat die marktleider winstgevend is. Wat doet hij?",
+      "options": [
+        "Casual benchmarking.",
+        "Een gecontroleerd experiment.",
+        "Een deductief bewijs van overdraagbaarheid.",
+        "Een systematische toets van alternatieve verklaringen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Het succes van het bedrijf bewijst niet dat juist dit beoordelingssysteem het veroorzaakte of elders werkt.",
+      "source": "Q 7; L"
+    },
+    {
+      "id": "b1-q-021",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Evidence-based management",
+      "question": "Een consultant verdedigt een ingreep met: ik doe dit al twintig jaar. Welke reactie past het best bij EBM?",
+      "options": [
+        "Welke resultaten en onderzoeken ondersteunen deze ingreep in onze situatie?",
+        "Ervaring is per definitie waardeloos.",
+        "Twintig jaar ervaring maakt toetsing overbodig.",
+        "We volgen alleen de bekendste consultant."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ervaring kan informatie opleveren, maar vervangt niet het kritisch onderzoeken van effectiviteit en context.",
+      "source": "Q 6; L"
+    },
+    {
+      "id": "b1-q-022",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Barrières voor EBM",
+      "question": "Welke situatie is vooral een culturele of psychologische barrière voor EBM?",
+      "options": [
+        "Een manager weigert pilots omdat zijn ervaring volgens hem al voldoende bewijs is.",
+        "Er is tijdelijk een defect in de computer voor data-analyse.",
+        "Een spreadsheetbestand is per ongeluk niet opgeslagen.",
+        "Een vergaderruimte is niet beschikbaar."
+      ],
+      "correctIndex": 0,
+      "explanation": "Het overmatige vertrouwen in eigen ervaring en de weigering te testen zijn houdingen. De andere opties zijn praktische problemen.",
+      "source": "Q 8"
+    },
+    {
+      "id": "b1-q-023",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Prikkels",
+      "question": "Een bonus wordt alleen bepaald door de omzet van deze maand; tijd om effecten te onderzoeken telt niet mee. Welk risico past bij de stof?",
+      "options": [
+        "Kortetermijnbeloningen kunnen zorgvuldig leren en toetsen verdringen.",
+        "Alle managers zullen daardoor vanzelf experimenten publiceren.",
+        "Prestatiemetingen verdwijnen hierdoor noodzakelijk volledig.",
+        "Iedere beloning maakt evidence-based werken onmogelijk."
+      ],
+      "correctIndex": 0,
+      "explanation": "De prikkel kan onmiddellijke resultaten boven het toetsen van de aanpak plaatsen. Dat is een risico, geen wet dat alle beloningen verkeerd zijn.",
+      "source": "Q 9"
+    },
+    {
+      "id": "b1-q-024",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Evidence-based management",
+      "question": "Wat is het meest passende doel van EBM?",
+      "options": [
+        "Betere organisatieprestaties via beslissingen op basis van het beste beschikbare bewijs.",
+        "Alle beslissingen onfeilbaar maken.",
+        "Het oordeel van managers volledig vervangen.",
+        "Geen rekening meer houden met onzekerheid."
+      ],
+      "correctIndex": 0,
+      "explanation": "EBM verbetert de basis voor keuzes; het elimineert onzekerheid en professionele afwegingen niet.",
+      "source": "Q 10; L"
+    },
+    {
+      "id": "b1-q-025",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Evidence-based management",
+      "question": "Onderzoek uit grote fabrieken lijkt gunstig, maar jouw organisatie is een klein ontwerpteam. Wat is de beste volgende stap?",
+      "options": [
+        "Onderzoeken hoe relevant het bewijs is en zo mogelijk lokaal zorgvuldig toetsen.",
+        "De aanpak zonder aanpassing invoeren omdat onderzoek altijd universeel geldt.",
+        "Al het onderzoek verwerpen omdat organisaties verschillen.",
+        "Alleen nagaan of de auteurs beroemd zijn."
+      ],
+      "correctIndex": 0,
+      "explanation": "Contextverschillen vragen om beoordeling van toepasbaarheid, niet automatisch kopiëren of automatisch afwijzen.",
+      "source": "L"
+    },
+    {
+      "id": "b1-q-026",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Bewijs en overtuigingen",
+      "question": "Een manager vraagt vooraf welke uitkomst reden is om zijn favoriete aanpak te stoppen. Welke houding laat hij zien?",
+      "options": [
+        "Bereidheid om op bewijs te reageren.",
+        "De zekerheid dat zijn aanpak onjuist is.",
+        "Weigering om de aanpak toetsbaar te maken.",
+        "Het idee dat persoonlijk vertrouwen voldoende is."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vooraf nadenken over tegenbewijs maakt bijstellen mogelijk. Het is iets anders dan vooraf aannemen dat een aanpak faalt.",
+      "source": "C p. 15–16, 30"
+    },
+    {
+      "id": "b1-q-027",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Geschiedenis",
+      "question": "Waarom ondersteunt een bredere verspreiding van ideeën via de drukpers kritisch onderzoek?",
+      "options": [
+        "Meer mensen kunnen claims vergelijken, fouten herkennen en kritiek verspreiden.",
+        "Gedrukte uitspraken worden daardoor noodzakelijk waar.",
+        "Waarnemingen zijn vanaf dat moment overbodig.",
+        "Publicatie maakt iedere auteur tot onbetwistbare autoriteit."
+      ],
+      "correctIndex": 0,
+      "explanation": "Openbaarheid en uitwisseling faciliteren kritiek, maar garanderen geen waarheid.",
+      "source": "C p. 29"
+    },
+    {
+      "id": "b1-q-028",
+      "block": "blok-1",
+      "type": "quiz",
+      "topic": "Verbinding literatuur",
+      "question": "Een manager vraagt of een kleine steekproef genoeg rechtvaardiging geeft om beleid voor alle vestigingen in te voeren. Welke verbinding legt hij?",
+      "options": [
+        "Het inductieprobleem verbinden met evidence-based management.",
+        "Een universele zekerheid afleiden uit een persoonlijke voorkeur.",
+        "Wetenschapsfilosofie losmaken van managementbeslissingen.",
+        "De conclusie dat onderzoek nooit bruikbaar is."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hij beoordeelt hoe ver bewijs een conclusie ondersteunt en gebruikt die afweging bij een praktische beslissing.",
+      "source": "L; Q 4, 10"
+    }
+  ]
+}
