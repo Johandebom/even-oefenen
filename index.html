@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Oefen wetenschapsfilosofie met flashcards en quizvragen in gemengde setjes van zeven.">
+<title>Blok 1 · Even oefenen</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#182a39;background:#edf2f7;font-size:16px;line-height:1.6;color-scheme:light;--blue:#1646ba;--line:#d4dfea}
+*{box-sizing:border-box}body{margin:0}main{max-width:850px;padding:32px 22px 48px;margin:auto}header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}.brand{font-weight:750;letter-spacing:-.04em;font-size:1.35rem}.tag{font-size:.875rem;color:#36516a}h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.22;letter-spacing:-.035em;margin:12px 0 20px}h2{font-size:clamp(1.25rem,4vw,1.6rem);line-height:1.5;margin:16px 0 24px}p{margin:12px 0}button,input{font:inherit}button,.upload{border:1px solid var(--line);background:#fff;color:inherit;border-radius:12px;padding:12px 18px;cursor:pointer;min-height:48px;font-weight:600}button:hover{background:#eaf0fc}button:disabled{cursor:default;opacity:.65}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #bc5b00;outline-offset:4px}.primary{background:var(--blue);color:#fff;border-color:var(--blue)}.primary:hover{background:#103b9d}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(20px,5vw,40px);box-shadow:0 10px 32px #182a3908}.eyebrow{text-transform:uppercase;letter-spacing:.09em;font-weight:700;font-size:.875rem;color:#405d77}.muted{color:#4d6377}.row{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.stats{display:flex;gap:28px;flex-wrap:wrap;margin:22px 0}.stat strong{font-size:1.65rem;display:block;line-height:1.2}.stat span{color:#4d6377;font-size:.875rem}.divider{border-top:1px solid var(--line);margin:24px 0}.options{display:grid;gap:12px}.option{text-align:left;display:flex;gap:12px;font-weight:450;width:100%}.letter{color:#536d84;min-width:1.5em;font-weight:700}.answer{padding:18px;border-radius:12px;background:#eff4fc;margin:18px 0}.feedback{margin:22px 0;padding:18px;border-radius:12px;border-left:5px solid}.correct{background:#edf8f0;border-color:#24703b}.wrong{background:#fff1ed;border-color:#b33720}.source{font-size:.875rem;color:#4d6377;overflow-wrap:anywhere}.progress{height:7px;background:#dce5f1;border-radius:20px;overflow:hidden;margin:16px 0 22px}.progress span{display:block;height:100%;background:var(--blue)}footer{margin-top:28px;color:#4d6377;font-size:.875rem}details{margin:20px 0}summary{cursor:pointer;font-weight:600}#notice:not(:empty){padding:16px;margin-bottom:18px;background:#fff1df;color:#633700;border:1px solid #d6a05a;border-radius:12px}a{color:var(--blue)}[hidden]{display:none!important}.upload input{max-width:100%;display:block;margin-top:8px}.end-number{font-size:3rem;font-weight:750;color:var(--blue)}@media(max-width:450px){main{padding:20px 14px}header{align-items:flex-start;flex-direction:column;gap:2px}.row>button{flex:1}.stats{gap:20px}.panel{border-radius:16px}}@media(prefers-reduced-motion:no-preference){button{transition:background .15s}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand">Even oefenen<span style="color:#1646ba">.</span></div><span class="tag">Wetenschapsfilosofie · Blok 1</span></header>
+<div id="notice" role="alert"></div>
+<section id="screen" aria-label="Oefenen"></section>
+<footer>
+<p>Je voortgang blijft in deze browser op dit apparaat bewaard. Geen automatische synchronisatie; bewaar een back-up om je voortgang mee te nemen.</p>
+<details><summary>Voortgang bewaren of terugzetten</summary><div class="row"><button id="export" type="button">Download voortgang</button><label class="upload">Voortgang terugzetten<input id="import" type="file" accept="application/json,.json"></label></div></details>
+<details><summary>Leerstof en herhaling</summary><p id="source-note"></p><p>Goed: na 1, 3, 5, 8, 11 en daarna telkens 14 dagen. Elke tussenpoos telt vanaf de dag waarop je goed antwoordt.</p><p>Fout: je ziet direct het antwoord en de uitleg. De vraag sluit achteraan aan. Zodra je hem goed hebt, komt hij morgen terug. Een herhaling op dezelfde dag brengt je niet naar een langere tussenpoos.</p><p>Flashcards: denk eerst zelf na, toon het modelantwoord en beoordeel eerlijk of je het wist. Quizvragen worden direct nagekeken.</p><p>Bronnen: collegeslides (PDF), litratuur.txt en de screenshots van Week 1 Quiz. De verwijzing staat bij elk antwoord.</p></details>
+</footer>
+</main>
+<script>
+/* Stabiele IDs behouden bij toekomstige uitbreidingen: bestaande voortgang blijft gekoppeld. */
+(function (root) {
+  const sources = {
+    L: 'litratuur.txt — aangeleverde samenvatting van Okasha en Pfeffer & Sutton, niet de originele publicaties',
+    C: 'College 1 voor Canvas.pdf',
+    Q: 'Screenshots Week 1 Quiz (20260904) — vragen 1 t/m 10'
+  };
+  const flashcards = [
+    ['Wetenschap','Wat probeert wetenschap te bereiken?','De wereld systematisch begrijpen, verklaren en voorspellen met behulp van redenering, observaties en toetsing. Een wetenschappelijk uiterlijk is op zichzelf geen bewijs van betrouwbaarheid.','L; C p. 31, 41'],
+    ['Demarcatie','Wat is het demarcatieprobleem?','De vraag hoe we wetenschap van niet-wetenschap, waaronder pseudowetenschap, onderscheiden. Eén eenvoudige checklist of criterium legt die grens niet volledig vast.','Q 2–3; C p. 16, 31'],
+    ['Pseudowetenschap','Waarom maakt technisch taalgebruik een theorie nog niet wetenschappelijk?','Jargon kan de indruk van wetenschap wekken zonder dat beweringen empirisch toetsbaar zijn. Vraag welke waarnemingen de claim ondersteunen of ermee in strijd zouden zijn.','Q 1'],
+    ['Falsifieerbaarheid','Wat betekent falsifieerbaarheid bij Popper?','Er moet in principe een mogelijke waarneming zijn die met de theorie in strijd is. Falsifieerbaar betekent dus weerlegbaar, niet dat de theorie al onwaar is.','L'],
+    ['Falsifieerbaarheid','Wat is het verschil tussen falsifieerbaar en gefalsifieerd?','Falsifieerbaar: een weerlegging is in principe mogelijk. Gefalsifieerd: er is daadwerkelijk een weerlegging vastgesteld, gegeven de relevante aannames en betrouwbare waarnemingen.','L; C p. 16'],
+    ['Falsifieerbaarheid','Waarom bewijzen duizend witte zwanen niet dat alle zwanen wit zijn?','Niet alle gevallen zijn waargenomen. Een volgende zwaan kan zwart zijn. Een betrouwbaar vastgesteld zwart exemplaar is wel een tegenvoorbeeld voor de universele uitspraak.','L'],
+    ['Demarcatie','Waarom is falsifieerbaarheid geen eenvoudige definitieve oplossing voor demarcatie?','Het onderscheid blijft betekenisvol, maar wetenschappelijke praktijken zijn te veelzijdig om met één eenvoudig criterium volledig te beoordelen. Een strikte checklist kan legitieme wetenschap uitsluiten.','Q 2–3'],
+    ['Redeneren','Wat is een premisse?','Een uitgangsuitspraak van een redenering. De conclusie wordt op basis van één of meer premissen afgeleid.','L'],
+    ['Deductie','Wat maakt een deductieve redenering geldig?','Als de premissen waar zijn, kan de conclusie niet onwaar zijn. Geldigheid gaat over het logische verband; zij garandeert niet dat de premissen feitelijk kloppen.','L; C p. 35–36'],
+    ['Deductie','Is een logisch geldige redenering automatisch waar over de wereld?','Nee. Een geldige redenering kan vertrekken van onware aannames. Voor een gegarandeerd ware conclusie zijn ook ware premissen nodig.','L; C p. 36, 39'],
+    ['Deductie','Geef een voorbeeld van deductie.','Alle leden van team A hebben een toegangspas. Noor is lid van team A. Dus Noor heeft een toegangspas. Als beide premissen waar zijn, volgt de conclusie noodzakelijk.','L (nieuw toepassingsvoorbeeld)'],
+    ['Inductie','Wat is inductief redeneren?','Van waargenomen gevallen naar een bredere uitspraak of voorspelling over niet-waargenomen gevallen gaan. De conclusie volgt niet met logische noodzaak.','L; Q 4–5'],
+    ['Inductie','Geef een managementvoorbeeld van inductie.','In vijf onderzochte vestigingen daalt het verzuim na een maatregel. Je verwacht dat die maatregel ook elders zal helpen. Dat gaat verder dan de onderzochte gevallen en blijft onzeker.','L; C p. 16 (nieuw toepassingsvoorbeeld)'],
+    ['Inductie','Wat is het probleem van inductie?','Beperkte waarnemingen en eerdere ervaringen garanderen niet logisch dat een algemene uitspraak of een voorspelling over nieuwe gevallen waar is.','L; Q 4'],
+    ['Inductie','Verdwijnt het probleem van inductie bij een heel grote steekproef?','Nee. Meer relevante waarnemingen kunnen de ondersteuning verbeteren, maar maken een conclusie over niet-waargenomen gevallen niet logisch zeker.','L; Q 4'],
+    ['Redeneren','Wat is het beslissende verschil tussen inductie en deductie?','Bij geldige deductie garanderen ware premissen een ware conclusie. Bij inductie kan de conclusie onwaar zijn terwijl de waarnemingen waarop zij rust kloppen.','L'],
+    ['Rationalisme','Wat is filosofisch rationalisme?','De opvatting dat de rede de belangrijkste bron van betrouwbare kennis is. Het benadrukt logische principes, deductie en scepsis tegenover misleidende zintuiglijke indrukken.','C p. 32, 35'],
+    ['Rationalisme','Welke drie rationalisten noemen de slides?','Descartes, Spinoza en Leibniz.','C p. 35'],
+    ['Rationalisme','Wat drukt Descartes uit met Cogito, ergo sum?','Ik denk, dus ik ben. Het denken vormt hier een vertrekpunt voor zekerheid in plaats van simpelweg op de zintuigen te vertrouwen.','C p. 35'],
+    ['Rationalisme','Wat zijn een sterkte en een risico van modellen in de bedrijfskunde?','Sterkte: aannames expliciet maken en gevolgen logisch afleiden. Risico: een logisch samenhangend model kan op onjuiste aannames over de werkelijkheid berusten.','C p. 36'],
+    ['Empirisme','Wat is filosofisch empirisme?','De opvatting dat ervaring de belangrijkste bron van kennis is. Observatie en experiment confronteren beweringen met de werkelijkheid.','C p. 38'],
+    ['Empirisme','Welke drie empiristen noemen de slides?','Locke, Berkeley en Hume.','C p. 38'],
+    ['Empirisme','Hoe verschillen rationalisten en empiristen over aangeboren ideeën?','Rationalisten laten ruimte voor kennisstructuren of ideeën die niet uit ervaring komen. Empiristen staan sceptisch tegenover aangeboren kennis en benadrukken ervaring.','C p. 35, 38'],
+    ['Wetenschappelijke cyclus','Waarom heeft moderne wetenschap zowel rede als ervaring nodig?','Logische samenhang garandeert niet dat een theorie bij de wereld past. Omgekeerd interpreteren gegevens zichzelf niet. Redenering en empirische toetsing vullen elkaar aan.','C p. 39–41'],
+    ['Wetenschappelijke cyclus','Welke rol spelen inductie en deductie in de wetenschappelijke cyclus?','Inductie helpt patronen uit observaties te generaliseren. Deductie helpt uit een theorie toetsbare verwachtingen af te leiden. Nieuwe observaties kunnen aanleiding geven tot bijstelling.','C p. 40–41'],
+    ['Bewijs interpreteren','Wat betekent: bewijs interpreteert zichzelf niet?','Gegevens vereisen redenering over context, aannames en alternatieve verklaringen. Een correct waargenomen verband kan verkeerd worden uitgelegd.','C p. 21–24'],
+    ['Simpsons paradox','Wat laat het rookvoorbeeld over Simpsons paradox zien?','In de samengevoegde gegevens hebben rokende tieners grotere longcapaciteit, terwijl binnen iedere leeftijdsgroep meer roken samenhangt met lagere longcapaciteit. Leeftijd beïnvloedt beide variabelen.','C p. 21–23'],
+    ['Causaliteit','Waarom bewijst een stijging na een maatregel niet dat de maatregel de oorzaak is?','Er kunnen gelijktijdige veranderingen of andere verklaringen zijn, zoals een groeiende markt of ander personeel. Alleen de volgorde in de tijd sluit die verklaringen niet uit.','L'],
+    ['Hulphypotheses','Wat is een hulphypothese bij het toetsen van een theorie?','Een aanvullende aanname die nodig is om een voorspelling aan een test te verbinden, bijvoorbeeld dat de maatregel correct is uitgevoerd. Een tegenvallend resultaat kan ook daarmee samenhangen.','C p. 16'],
+    ['Bewijs en overtuigingen','Wat betekent responsiveness to evidence?','Bereid zijn overtuigingen en handelen bij te stellen als relevante bevindingen daartoe aanleiding geven. Bewijs verzamelen zonder erop te reageren is onvoldoende.','C p. 16, 25; L'],
+    ['Semmelweis','Welke interventie en uitkomst beschrijven de slides bij Semmelweis?','Handen wassen met chloorkalk; daarna daalde de moedersterfte sterk. De casus laat ook zien dat overtuigend praktisch bewijs niet vanzelf wordt geaccepteerd.','C p. 17–19'],
+    ['John Snow','Hoe botste John Snows verklaring van cholera met de heersende theorie?','Snow wees op besmet water en het patroon van sterfgevallen rond een waterpomp. Dat botste met de miasmatheorie, die ziekte aan slechte lucht toeschreef.','C p. 20'],
+    ['Filosofie','Wat onderzoekt filosofie volgens de slides?','Overtuigingen, aannames en concepten systematisch en kritisch: wat geloven we, waarom, is de rechtvaardiging voldoende en wat zou onze mening veranderen?','C p. 30'],
+    ['Geschiedenis','Hoe droeg de drukpers volgens het college bij aan kritisch onderzoek?','Ideeën konden breder worden verspreid, vergeleken en bekritiseerd. Daardoor werden fouten zichtbaarder en werd kennis publiekelijk betwistbaarder.','C p. 29'],
+    ['Evidence-based management','Wat is evidence-based management (EBM)?','Managementbeslissingen baseren op het beste beschikbare bewijs en kennis blijven bijstellen. Het doel is betere beslissingen en prestaties, niet onfeilbaarheid.','L; Q 10'],
+    ['Evidence-based management','Waarom zijn intuïtie en persoonlijke anekdotes onvoldoende als enige basis?','Ze kunnen beperkt of selectief zijn en hoeven niet representatief te zijn. Ervaring kan aanleiding geven tot een vraag, maar moet kritisch worden vergeleken met ander relevant bewijs.','L; Q 6'],
+    ['Casual benchmarking','Wat betekent casual benchmarking?','Een praktijk van een succesvol bedrijf overnemen omdat het bedrijf succesvol is, zonder voldoende te onderzoeken of die praktijk het succes veroorzaakte en in de eigen context past.','Q 7; L'],
+    ['Evidence-based management','Waarom garandeert succes in organisatie A geen succes in organisatie B?','Organisaties kunnen verschillen in personeel, klanten, cultuur, technologie en markt. De overdraagbaarheid van een praktijk moet worden onderzocht.','L; C p. 16'],
+    ['Barrières voor EBM','Noem drie culturele of psychologische barrières voor EBM.','Overmatig vertrouwen op conventionele wijsheid, eigen ervaring als superieur beschouwen en weigeren kleinschalig te experimenteren.','Q 6, 8'],
+    ['Prikkels','Hoe kunnen beloningen EBM ondermijnen?','Als vooral kortetermijnresultaten worden beloond, kan zorgvuldig toetsen en leren worden verdrongen, ook als er weinig bewijs is voor de gebruikte aanpak.','Q 9'],
+    ['Evidence-based management','Waarom maakt EBM het oordeel van een manager niet overbodig?','Bewijs moet worden beoordeeld op kwaliteit en toepasbaarheid in de eigen situatie. Beslissingen blijven afwegingen onder onzekerheid.','L; Q 10'],
+    ['Verbinding literatuur','Hoe sluiten Okasha en Pfeffer & Sutton op elkaar aan?','Okasha behandelt hoe kennis en conclusies gerechtvaardigd worden. Pfeffer & Sutton passen een kritische omgang met bewijs toe op managementbeslissingen.','L']
+  ];
+  // Het juiste antwoord staat in de brondata vooraan; de oefeninterface moet opties schudden.
+  const quizzes = [
+    ['Pseudowetenschap','Een adviseur gebruikt ingewikkelde termen, maar kan geen uitkomst noemen die zijn claim tegenspreekt. Wat is het kernprobleem?',['De claim mist een duidelijke mogelijkheid tot empirische weerlegging.','De claim bevat te weinig wiskundige formules.','De adviseur probeert iets te verklaren in plaats van te voorspellen.','De adviseur gebruikt vaktermen.'],'Vaktermen zijn niet het probleem op zichzelf. Doorslaggevend is hier dat de bewering aan iedere mogelijke uitkomst kan worden aangepast.','Q 1; L'],
+    ['Demarcatie','Een student stelt: alleen onderzoek met laboratoriumexperimenten is wetenschap. Wat is de beste kritiek?',['Deze eis kan legitieme wetenschappen uitsluiten.','Ieder vakgebied met veel volgers is wetenschap.','Wetenschap heeft nooit experimenten nodig.','Wetenschap en pseudowetenschap verschillen uitsluitend in populariteit.'],'Een eenvoudige methodechecklist vangt de verscheidenheid aan wetenschappelijk onderzoek niet volledig.','Q 2–3'],
+    ['Demarcatie','Iemand zegt: omdat geen enkel eenvoudig criterium volstaat, bestaat het onderscheid tussen wetenschap en pseudowetenschap niet. Welke reactie past bij de quizstof?',['Het onderscheid kan betekenisvol zijn zonder één sluitend eenvoudig criterium.','Het onderscheid bestaat alleen als Popper altijd gelijk heeft.','Een gebrek aan één criterium maakt alle claims even betrouwbaar.','Het onderscheid hangt uitsluitend af van de opleiding van de spreker.'],'Moeilijk af te bakenen betekent niet betekenisloos. De quiz waarschuwt zowel voor een simpele oplossing als voor het volledig opgeven van het onderscheid.','Q 3'],
+    ['Falsifieerbaarheid','Welke uitspraak is het duidelijkst falsifieerbaar?',['Iedere werknemer in dit team heeft vandaag vóór negen uur ingelogd.','Een onzichtbare kracht verklaart iedere mogelijke uitkomst.','Onze methode werkt altijd, behalve wanneer zij niet werkt.','Succes verschijnt zodra de energie op een onmeetbare manier klopt.'],'Een betrouwbaar vastgesteld teamlid dat niet vóór negen uur inlogde is een tegenvoorbeeld. De andere claims ontwijken duidelijke toetsing.','L (nieuw toepassingsvoorbeeld)'],
+    ['Falsifieerbaarheid','Een degelijk tegenvoorbeeld weerlegt de uitspraak dat alle vestigingen winstgevend zijn. Wat volgt?',['De universele uitspraak is onjuist.','Alle vestigingen maken verlies.','Geen enkele uitspraak over winst is toetsbaar.','Er zijn onvoldoende gegevens om de universele uitspraak te weerspreken.'],'Eén verliesgevende vestiging weerlegt alle vestigingen zijn winstgevend, maar zegt niet dat alle vestigingen verlies maken.','L (nieuw toepassingsvoorbeeld)'],
+    ['Deductie','Alle projecten in categorie X worden gecontroleerd. Project Delta behoort tot X. Wat volgt deductief?',['Project Delta wordt gecontroleerd.','Alle gecontroleerde projecten behoren tot X.','Project Delta is succesvol.','Waarschijnlijk behoren alle projecten tot X.'],'De conclusie past de algemene premisse toe op Delta. De omkering en een conclusie over succes volgen niet uit deze premissen.','L'],
+    ['Deductie','Een model redeneert zonder logische fouten vanuit de aanname dat iedere klant alleen de laagste prijs kiest. Is de voorspelling daardoor zeker juist?',['Nee, de aanname over klanten kan onjuist zijn.','Ja, logische geldigheid garandeert dat aannames kloppen.','Ja, zolang het model voldoende formules bevat.','Nee, deductie kan nooit een noodzakelijke conclusie opleveren.'],'Geldigheid garandeert alleen een ware conclusie als de premissen ook waar zijn.','C p. 36, 39; L'],
+    ['Inductie','Een onderzoeker vindt bij dertig teams een vergelijkbaar patroon en verwacht dat het ook bij andere teams optreedt. Welke redenering is dit?',['Inductie, omdat de conclusie verder gaat dan de onderzochte teams.','Deductie, omdat er dertig teams zijn onderzocht.','Falsificatie, omdat ieder patroon een theorie weerlegt.','Een logische zekerheid, omdat het patroon herhaald is.'],'De stap van onderzochte naar niet-onderzochte gevallen is inductief. Herhaling maakt die stap niet deductief geldig.','Q 4–5; L'],
+    ['Inductie','Alle tot nu toe onderzochte machines van een type waren betrouwbaar. Waarom is gegarandeerd betrouwbaar bij iedere toekomstige machine te sterk?',['De conclusie omvat niet-waargenomen gevallen.','Herhaalde observaties kunnen geen enkele steun bieden.','Alle inductieve conclusies zijn feitelijk onwaar.','Deductie wordt ongeldig zodra een machine wordt onderzocht.'],'Inductief bewijs kan ondersteunen zonder een universele of toekomstige uitspraak logisch te garanderen.','Q 4; L'],
+    ['Inductie','Een directeur zegt: deze aanpak werkte in twee bedrijven, dus hij werkt zeker in ons bedrijf. Waar zit de overschatting?',['De stap naar een nieuwe context wordt als logisch zeker gepresenteerd.','Er wordt een noodzakelijke conclusie uit ware algemene premissen getrokken.','De directeur gebruikt waarnemingen, en dat mag niet bij management.','Twee bedrijven kunnen per definitie geen relevante informatie opleveren.'],'Eerdere ervaringen kunnen relevant zijn, maar verschillen in context blijven belangrijk.','L; C p. 16'],
+    ['Rationalisme','Een student benadrukt deductie, aangeboren ideeën en wantrouwen tegenover de zintuigen. Welke stroming past het best?',['Rationalisme.','Empirisme.','Casual benchmarking.','Een uitsluitend op ervaring gebaseerde kennisleer.'],'Deze combinatie behoort in de slides bij rationalisme. Empirisme legt juist het accent op ervaring.','C p. 35, 38'],
+    ['Empirisme','Een onderzoeker zegt: een sluitende redenering is niet genoeg; we moeten kijken wat er werkelijk gebeurt. Welk accent legt zij?',['Een empiristisch accent op observatie en toetsing.','De afwijzing van iedere mogelijke observatie.','De zekerheid dat aangeboren ideeën alle kennis leveren.','De stelling dat logisch samenhangende theorieën altijd waar zijn.'],'Zij eist confrontatie met ervaring. Dit betekent niet dat logische redenering onbelangrijk wordt.','C p. 37–39'],
+    ['Wetenschappelijke cyclus','Een onderzoeker leidt uit een theorie een verwachting af en verzamelt vervolgens gegevens. Wat is de eerste stap?',['Deductie van een toetsbare verwachting.','Inductie vanuit de nog niet verzamelde gegevens.','Bewijs dat de theorie definitief waar is.','Het uitsluiten van iedere hulphypothese.'],'Van een theorie naar een verwachting redeneren is de deductieve kant van de cyclus; daarna volgt empirische toetsing.','C p. 40'],
+    ['Wetenschappelijke cyclus','Een team vindt in metingen een patroon, vormt een theorie en test nieuwe voorspellingen. Welke omschrijving past het best?',['Een wisselwerking tussen inductie, deductie en observatie.','Zuiver rationalisme zonder waarneming.','Uitsluitend deductie van begin tot eind.','Een proces waarin toetsing na theorievorming overbodig is.'],'De cyclus verbindt generaliseren uit observaties met het afleiden en toetsen van nieuwe verwachtingen.','C p. 40–41'],
+    ['Simpsons paradox','In totaal hebben deelnemers aan een training hogere scores. Binnen elke ervaringsgroep scoren deelnemers juist lager. Wat moet je eerst onderzoeken?',['Hoe ervaring samenhangt met deelname en scores.','Waarom het totaalgemiddelde altijd de oorzaak bewijst.','Hoe je de uitkomsten per ervaringsgroep kunt negeren.','Waarom ieder verschil aantoont dat de gegevens vervalst zijn.'],'Een derde variabele kan een omkering tussen samengevoegde en uitgesplitste patronen helpen verklaren, zoals leeftijd in het collegevoorbeeld.','C p. 21–23 (nieuwe casus)'],
+    ['Causaliteit','Na invoering van een bonus stijgt de omzet, terwijl ook de hele markt sterk groeit. Wat is de beste conclusie?',['De stijging alleen toont niet aan dat de bonus de oorzaak is.','De bonus heeft bewezen de volledige stijging veroorzaakt.','De marktgroei bewijst dat de bonus geen enkel effect had.','De omzetmeting moet onjuist zijn.'],'Er is een alternatieve verklaring. Zonder verdere vergelijking kun je het afzonderlijke effect van de bonus niet uit deze stijging afleiden.','L'],
+    ['Hulphypotheses','Een interventie levert geen verwacht resultaat op, maar de uitvoering week sterk af van het plan. Wat is een relevante vervolgvraag?',['Faalde de theorie of een aanname over correcte uitvoering?','Hoe bewijst dit dat geen theorie ooit te toetsen is?','Waarom is de theorie nu automatisch waar?','Welke succesvolle concurrent kunnen we zonder onderzoek kopiëren?'],'Tests steunen ook op aanvullende aannames. Die moet je onderzoeken; afwijkende uitvoering is geen automatische vrijbrief voor de theorie.','C p. 16'],
+    ['Semmelweis','Een organisatie ziet sterke aanwijzingen dat een werkwijze schade vermindert, maar weigert verandering omdat gevestigde autoriteiten haar afwijzen. Welke les uit het college past?',['Bewijs beschikbaar hebben garandeert nog niet dat mensen hun overtuigingen aanpassen.','Autoriteit vormt altijd sterker bewijs dan observaties.','Een werkzame interventie vereist vooraf een volledig juiste theorie.','Gegevens kunnen nooit botsen met bestaande overtuigingen.'],'De casus Semmelweis toont de afstand tussen praktisch bewijs en acceptatie.','C p. 17–19'],
+    ['John Snow','Een patroon rond een waterbron botst met de overtuiging dat slechte lucht ziekte veroorzaakt. Wat illustreert deze casus in het college?',['Empirische bevindingen kunnen een gevestigde verklaring uitdagen.','Een gevestigde theorie mag observaties altijd terzijde schuiven.','Ruimtelijke patronen leveren per definitie deductieve zekerheid.','Alleen autoriteit kan bepalen of waarnemingen relevant zijn.'],'De slides gebruiken Snow om de spanning tussen theorie en bewijs te tonen; gegevens moeten serieus worden onderzocht.','C p. 20, 37'],
+    ['Casual benchmarking','Een directeur kopieert het beoordelingssysteem van een marktleider, uitsluitend omdat die marktleider winstgevend is. Wat doet hij?',['Casual benchmarking.','Een gecontroleerd experiment.','Een deductief bewijs van overdraagbaarheid.','Een systematische toets van alternatieve verklaringen.'],'Het succes van het bedrijf bewijst niet dat juist dit beoordelingssysteem het veroorzaakte of elders werkt.','Q 7; L'],
+    ['Evidence-based management','Een consultant verdedigt een ingreep met: ik doe dit al twintig jaar. Welke reactie past het best bij EBM?',['Welke resultaten en onderzoeken ondersteunen deze ingreep in onze situatie?','Ervaring is per definitie waardeloos.','Twintig jaar ervaring maakt toetsing overbodig.','We volgen alleen de bekendste consultant.'],'Ervaring kan informatie opleveren, maar vervangt niet het kritisch onderzoeken van effectiviteit en context.','Q 6; L'],
+    ['Barrières voor EBM','Welke situatie is vooral een culturele of psychologische barrière voor EBM?',['Een manager weigert pilots omdat zijn ervaring volgens hem al voldoende bewijs is.','Er is tijdelijk een defect in de computer voor data-analyse.','Een spreadsheetbestand is per ongeluk niet opgeslagen.','Een vergaderruimte is niet beschikbaar.'],'Het overmatige vertrouwen in eigen ervaring en de weigering te testen zijn houdingen. De andere opties zijn praktische problemen.','Q 8'],
+    ['Prikkels','Een bonus wordt alleen bepaald door de omzet van deze maand; tijd om effecten te onderzoeken telt niet mee. Welk risico past bij de stof?',['Kortetermijnbeloningen kunnen zorgvuldig leren en toetsen verdringen.','Alle managers zullen daardoor vanzelf experimenten publiceren.','Prestatiemetingen verdwijnen hierdoor noodzakelijk volledig.','Iedere beloning maakt evidence-based werken onmogelijk.'],'De prikkel kan onmiddellijke resultaten boven het toetsen van de aanpak plaatsen. Dat is een risico, geen wet dat alle beloningen verkeerd zijn.','Q 9'],
+    ['Evidence-based management','Wat is het meest passende doel van EBM?',['Betere organisatieprestaties via beslissingen op basis van het beste beschikbare bewijs.','Alle beslissingen onfeilbaar maken.','Het oordeel van managers volledig vervangen.','Geen rekening meer houden met onzekerheid.'],'EBM verbetert de basis voor keuzes; het elimineert onzekerheid en professionele afwegingen niet.','Q 10; L'],
+    ['Evidence-based management','Onderzoek uit grote fabrieken lijkt gunstig, maar jouw organisatie is een klein ontwerpteam. Wat is de beste volgende stap?',['Onderzoeken hoe relevant het bewijs is en zo mogelijk lokaal zorgvuldig toetsen.','De aanpak zonder aanpassing invoeren omdat onderzoek altijd universeel geldt.','Al het onderzoek verwerpen omdat organisaties verschillen.','Alleen nagaan of de auteurs beroemd zijn.'],'Contextverschillen vragen om beoordeling van toepasbaarheid, niet automatisch kopiëren of automatisch afwijzen.','L'],
+    ['Bewijs en overtuigingen','Een manager vraagt vooraf welke uitkomst reden is om zijn favoriete aanpak te stoppen. Welke houding laat hij zien?',['Bereidheid om op bewijs te reageren.','De zekerheid dat zijn aanpak onjuist is.','Weigering om de aanpak toetsbaar te maken.','Het idee dat persoonlijk vertrouwen voldoende is.'],'Vooraf nadenken over tegenbewijs maakt bijstellen mogelijk. Het is iets anders dan vooraf aannemen dat een aanpak faalt.','C p. 15–16, 30'],
+    ['Geschiedenis','Waarom ondersteunt een bredere verspreiding van ideeën via de drukpers kritisch onderzoek?',['Meer mensen kunnen claims vergelijken, fouten herkennen en kritiek verspreiden.','Gedrukte uitspraken worden daardoor noodzakelijk waar.','Waarnemingen zijn vanaf dat moment overbodig.','Publicatie maakt iedere auteur tot onbetwistbare autoriteit.'],'Openbaarheid en uitwisseling faciliteren kritiek, maar garanderen geen waarheid.','C p. 29'],
+    ['Verbinding literatuur','Een manager vraagt of een kleine steekproef genoeg rechtvaardiging geeft om beleid voor alle vestigingen in te voeren. Welke verbinding legt hij?',['Het inductieprobleem verbinden met evidence-based management.','Een universele zekerheid afleiden uit een persoonlijke voorkeur.','Wetenschapsfilosofie losmaken van managementbeslissingen.','De conclusie dat onderzoek nooit bruikbaar is.'],'Hij beoordeelt hoe ver bewijs een conclusie ondersteunt en gebruikt die afweging bij een praktische beslissing.','L; Q 4, 10']
+  ];
+  const bank = {
+    schemaVersion: 1,
+    block: 'blok-1',
+    title: 'Wetenschapsfilosofie — Blok 1',
+    sources,
+    sourceNote: 'Gebaseerd op alle aangeleverde bestanden. De literatuur is een samenvatting; de oorspronkelijke publicaties zijn niet aanwezig. Screenshots bevatten de Week 1 Quiz, geen volledig proefexamen. Nieuwe casussen zijn oefenvarianten, geen officiële examenvragen.',
+    settings: { batchSize: 7, mixed: true, intervalsDays: [1,3,5,8,11,14], maxIntervalDays: 14, wrongAnswer: 'feedback-then-append', resetOnWrong: true },
+    items: [
+      ...flashcards.map((r,i) => ({id: 'b1-f-'+String(i+1).padStart(3,'0'), block:'blok-1', type:'flashcard', topic:r[0], question:r[1], answer:r[2], source:r[3]})),
+      ...quizzes.map((r,i) => ({id: 'b1-q-'+String(i+1).padStart(3,'0'), block:'blok-1', type:'quiz', topic:r[0], question:r[1], options:r[2], correctIndex:0, explanation:r[3], source:r[4]}))
+    ]
+  };
+  if (typeof module !== 'undefined' && module.exports) module.exports = bank;
+  else root.BLOK_1 = bank;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+</script>
+<script>
+(function(root) {
+  const intervals = [1,3,5,8,11,14];
+  function today(date = new Date()) {
+    return [date.getFullYear(), String(date.getMonth()+1).padStart(2,'0'), String(date.getDate()).padStart(2,'0')].join('-');
+  }
+  function addDays(day, count) {
+    const [y,m,d] = day.split('-').map(Number);
+    return today(new Date(y,m-1,d+count,12));
+  }
+  function shuffle(items, random = Math.random) {
+    const out = [...items];
+    for(let i=out.length-1;i>0;i--) {const j=Math.floor(random()*(i+1)); [out[i],out[j]]=[out[j],out[i]];}
+    return out;
+  }
+  function due(items, progress, day) {
+    return items.filter(item => !progress[item.id] || progress[item.id].due <= day);
+  }
+  function createSession(items, progress, day, random = Math.random) {
+    const available = due(items, progress, day);
+    const reviewed = shuffle(available.filter(x => progress[x.id]), random).sort((a,b) => progress[a.id].due.localeCompare(progress[b.id].due));
+    const fresh = shuffle(available.filter(x => !progress[x.id]), random);
+    const ordered = [...reviewed, ...fresh];
+    const selected = ordered.slice(0,7);
+    // Mix beide soorten wanneer dat binnen dezelfde prioriteitsgroep kan.
+    if(selected.length > 1 && selected.every(x => x.type === selected[0].type)) {
+      const other = ordered.find(x => x.type !== selected[0].type && Boolean(progress[x.id]) === Boolean(progress[selected[selected.length-1].id]));
+      if(other) selected[selected.length-1] = other;
+    }
+    const ids = shuffle(selected, random).map(x=>x.id);
+    return ids.length ? {day, ids, queue:[...ids], completed:[], attempts:0, mistakes:0, feedback:null} : null;
+  }
+  function grade(progress, session, correct, day) {
+    if(session.feedback || !session.queue.length) throw new Error('Geen onbeantwoorde vraag');
+    const id = session.queue.shift();
+    const previous = progress[id] || {stage:-1, due:day, lastPass:null, lapses:0};
+    const next = {...previous};
+    session.attempts++;
+    if(correct) {
+      if(previous.lastPass !== day) next.stage = Math.min(previous.stage+1, intervals.length-1);
+      next.stage = Math.max(0,next.stage);
+      next.due = addDays(day, intervals[next.stage]);
+      next.lastPass = day;
+      session.completed.push(id);
+    } else {
+      next.stage = -1;
+      next.due = day;
+      next.lastPass = null;
+      next.lapses = previous.lapses+1;
+      session.queue.push(id);
+      session.mistakes++;
+    }
+    progress[id] = next;
+    session.feedback = {id, correct, due:next.due};
+    return session.feedback;
+  }
+  function validateState(value, items) {
+    if(!value || value.version !== 1 || !value.progress || typeof value.progress !== 'object' || Array.isArray(value.progress)) throw new Error('Onbekend voortgangsbestand');
+    const ids = new Set(items.map(x=>x.id));
+    const validDay = d => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && today(new Date(d+'T12:00:00')) === d;
+    for(const p of Object.values(value.progress)) {
+      if(!p || !Number.isInteger(p.stage) || p.stage < -1 || p.stage > 5 || !validDay(p.due) || (p.lastPass !== null && !validDay(p.lastPass)) || !Number.isInteger(p.lapses) || p.lapses < 0) throw new Error('Ongeldige voortgang');
+    }
+    const s = value.session;
+    if(s && (!validDay(s.day) || !Array.isArray(s.ids) || s.ids.length>7 || new Set(s.ids).size!==s.ids.length || s.ids.some(id=>!ids.has(id)) || !Array.isArray(s.queue) || !Array.isArray(s.completed) || [...s.queue,...s.completed].some(id=>!s.ids.includes(id)) || new Set([...s.queue,...s.completed]).size !== s.ids.length || s.queue.length+s.completed.length!==s.ids.length || !Number.isInteger(s.attempts) || !Number.isInteger(s.mistakes) || (s.feedback && (!s.ids.includes(s.feedback.id) || typeof s.feedback.correct !== 'boolean' || !validDay(s.feedback.due))))) throw new Error('Ongeldig oefensetje');
+    return value;
+  }
+  const api = {intervals,today,addDays,shuffle,due,createSession,grade,validateState};
+  if(typeof module !== 'undefined' && module.exports) module.exports=api; else root.Repetition=api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+</script>
+<script>
+(() => {
+  'use strict';
+  const bank=BLOK_1, R=Repetition, key='even-oefenen-progress-v1';
+  const screen=document.getElementById('screen'), notice=document.getElementById('notice');
+  const byId=Object.fromEntries(bank.items.map(x=>[x.id,x]));
+  let state={version:1,progress:{},session:null}, storageBlocked=false;
+  try { const raw=localStorage.getItem(key); if(raw) state=R.validateState(JSON.parse(raw),bank.items); }
+  catch(error){storageBlocked=true;notice.textContent='Je opgeslagen voortgang kon niet worden gelezen. De bestaande opslag wordt niet overschreven. Je kunt nu oefenen en een back-up downloaden, of een geldige back-up terugzetten.';}
+  function save(){ if(storageBlocked) return; try{localStorage.setItem(key,JSON.stringify(state));}catch(error){notice.textContent='Opslaan in deze browser lukt niet. Download je voortgang voordat je de pagina sluit.';} }
+  const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+  const button=(text,fn,cls)=>{const b=el('button',text,cls);b.type='button';b.addEventListener('click',fn);return b;};
+  const formatDay=day=>new Date(day+'T12:00:00').toLocaleDateString('nl-NL',{weekday:'short',day:'numeric',month:'short'});
+  function resetScreen(){screen.replaceChildren();const p=el('div',undefined,'panel');screen.append(p);return p;}
+  function start(){ state.session=R.createSession(bank.items,state.progress,R.today());save();render(); }
+  function home(){
+    const panel=resetScreen(), day=R.today(), available=R.due(bank.items,state.progress,day);
+    panel.append(el('div','Jouw dagelijkse oefenmoment','eyebrow'),el('h1','Zeven vragen. Steeds beter onthouden.'));
+    const stats=el('div',undefined,'stats');
+    for(const [n,label] of [[available.filter(x=>state.progress[x.id]).length,'te herhalen'],[available.filter(x=>!state.progress[x.id]).length,'nieuw'],[bank.items.length,'leeritems']]){const s=el('div',undefined,'stat');s.append(el('strong',String(n)),el('span',label));stats.append(s);}panel.append(stats);
+    if(available.length){panel.append(el('p','Flashcards en quizvragen door elkaar, maximaal zeven per setje. Vragen die aan de beurt zijn gaan voor.','muted'),button('Start een setje van '+Math.min(7,available.length),start,'primary'));}
+    else {const next=Object.values(state.progress).map(p=>p.due).sort()[0];panel.append(el('h2','Alles voor nu gedaan.'),el('p','Je volgende herhaling staat klaar op '+formatDay(next)+'.'));}
+    panel.append(el('div',undefined,'divider'),el('p','42 flashcards · 28 oefenvragen','muted'));
+  }
+  function respond(correct){R.grade(state.progress,state.session,correct,R.today());save();render();}
+  function render(){
+    const s=state.session;
+    if(!s){home();return;}
+    // Een onafgemaakt setje blijft ook na middernacht hervatbaar; beantwoorden gebruikt de actuele dag.
+    if(!s.queue.length && !s.feedback){
+      const p=resetScreen();p.append(el('div','Setje afgerond','eyebrow'),el('div',s.ids.length+'/'+s.ids.length,'end-number'),el('h1','Deze zitten erin.'),el('p',s.mistakes? s.mistakes+' keer fout? Die heb je opnieuw geoefend. Alles uit dit setje is nu goed beantwoord.':'Alles in één keer goed beantwoord.'));
+      p.append(el('p','Je volgende herhalingen zijn opgeslagen.','muted'),button('Verder',()=>{state.session=null;save();home();},'primary'));return;
+    }
+    const item=byId[s.feedback?s.feedback.id:s.queue[0]], p=resetScreen();
+    const top=el('div',undefined,'row');top.append(el('span',item.type==='quiz'?'QUIZVRAAG':'FLASHCARD','eyebrow'),el('span',s.completed.length+' van '+s.ids.length+' afgerond','muted'));p.append(top);
+    const track=el('div',undefined,'progress');track.setAttribute('role','progressbar');track.setAttribute('aria-label','Setje afgerond');track.setAttribute('aria-valuenow',s.completed.length);track.setAttribute('aria-valuemin','0');track.setAttribute('aria-valuemax',s.ids.length);const fill=el('span');fill.style.width=(s.completed.length/s.ids.length*100)+'%';track.append(fill);p.append(track);
+    p.append(el('div',item.topic,'muted'),el('h2',item.question));
+    if(s.feedback){
+      const f=s.feedback, box=el('div',undefined,'feedback '+(f.correct?'correct':'wrong'));box.setAttribute('role','status');
+      box.append(el('strong',f.correct?'Goed!':'Nog niet goed.'),el('p',item.type==='quiz'?item.options[item.correctIndex]:item.answer));
+      if(item.explanation)box.append(el('p',item.explanation));
+      box.append(el('p',f.correct?'Volgende herhaling: '+formatDay(f.due)+'.':'Deze vraag staat achteraan en komt na de andere openstaande vragen terug.'));
+      p.append(box,el('p','Bron: '+item.source,'source'),button(s.queue.length?'Volgende vraag':'Rond het setje af',()=>{s.feedback=null;save();render();},'primary'));
+    }else if(item.type==='quiz'){
+      const options=el('div',undefined,'options');R.shuffle(item.options.map((text,index)=>({text,index}))).forEach((o,i)=>{const b=button('',()=>respond(o.index===item.correctIndex),'option');b.append(el('span',String.fromCharCode(65+i),'letter'),el('span',o.text));options.append(b);});p.append(options);
+    }else{
+      p.append(el('p','Bedenk je antwoord voordat je de kaart omdraait.','muted'));
+      const reveal=button('Toon antwoord',()=>{reveal.remove();p.append(el('div',item.answer,'answer'),el('p','Bron: '+item.source,'source'));const row=el('div',undefined,'row');row.append(button('Nog niet goed',()=>respond(false)),button('Dat wist ik',()=>respond(true),'primary'));p.append(row);},'primary');p.append(reveal);
+    }
+  }
+  document.getElementById('source-note').textContent=bank.sourceNote;
+  document.getElementById('export').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}), url=URL.createObjectURL(blob), a=el('a');a.href=url;a.download='even-oefenen-voortgang-'+R.today()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+  document.getElementById('import').addEventListener('change',async event=>{
+    const file=event.target.files[0];if(!file)return;
+    try{if(file.size>2000000)throw new Error('Bestand te groot');const parsed=R.validateState(JSON.parse(await file.text()),bank.items);
+      if(!confirm('De voortgang uit dit bestand vervangt je huidige voortgang in deze browser. Doorgaan?'))return;
+      state=parsed;storageBlocked=false;notice.textContent='';save();render();
+    }catch(error){notice.textContent='Dit bestand is geen geldige voortgangsback-up. Je huidige voortgang is behouden.';}finally{event.target.value='';}
+  });
+  render();
+})();
+
+</script>
+</body></html>
+
